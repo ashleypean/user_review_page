@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('images/bg-pattern-top-mobile.svg');
+  background-repeat: no-repeat;
+  font-family: 'Spartan', sans-serif;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header h1{
+  color: hsl(300, 43%, 22%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 375px) {
+  .header h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 4.5rem 3rem .5rem;
+  }
+
+  .subtitle p {
+    color: hsl(303, 10%, 53%);
+    font-size: .95rem;
+    margin: 1rem .8rem 2rem;
+    padding: 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.8em;
+  }
+
+  div.rating-cards div{
+    background-color: hsl(300, 24%, 96%);
+    margin: 1rem 1rem 2rem;
+    padding: 1rem 0; 
+    border-radius: 8px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  span.stars {
+    display: block;
+    margin: 0 auto 1rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  .stars img {
+    width: 1rem;
+    height: auto;
+    margin-left: .5rem;
+  }
+
+  div.rating-cards p {
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  div.text-cards div {
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    margin: 1rem 5%;
+    padding: 1rem 2.5rem 2.5rem;
+    border-radius: 8px; 
+    height: 15rem;
+  }
+
+  .text-cards .user-info {
+    height: 5rem;
+    width: 12rem;
+    padding: 0;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas: 
+    "img user "
+    "img verified ";
+    grid-gap: 0 0;
+  }
+
+  .text-cards img {
+    grid-area: img;
+    border-radius: 50%;
+    width: 3rem;
+    height: auto;
+    align-self: center;
+  }
+
+  .text-cards .user {
+    grid-area: user;
+    align-self: end;
+    font-size: .8rem;
+    font-weight: bold;
+    margin: 0 0 .25rem;
+    padding: 0;
+  }
+
+  .text-cards .verified {
+    grid-area: verified;
+    align-self: start;
+    font-size: .8rem;
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+    margin: .25rem 0;
+    padding: 0;
+
+  }
+
+  .text-cards .comment {
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+  }
+}
