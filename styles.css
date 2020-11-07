@@ -73,7 +73,6 @@ div.container {
   width: 100%;
   font-size: 20px;
   text-align: center;
-  position: fixed; 
   bottom: 0;
 }
 .attribution a {
@@ -90,6 +89,7 @@ div.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 2rem;
   }
 
   .header h1{
@@ -290,6 +290,11 @@ div.container {
 
   div.text-cards div:nth-of-type(3) {
     align-self: flex-end;
+  }
+  
+  .attribution {
+    position: fixed; 
+    bottom: 0;
   }
 
 }
