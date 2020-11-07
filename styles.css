@@ -10,6 +10,13 @@ body {
   font-family: 'Spartan', sans-serif;
 }
 
+div.container {
+  max-width: 1400px;
+  margin: auto;
+  margin-top:10%;
+}
+
+
 .header h1{
   color: hsl(300, 43%, 22%);
 }
@@ -64,8 +71,10 @@ body {
 
 .attribution {
   width: 100%;
-  font-size: 11px;
+  font-size: 20px;
   text-align: center;
+  position: fixed; 
+  bottom: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
